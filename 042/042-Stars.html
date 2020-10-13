@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link href="dist/042-stars.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="frame">
+      <div class="stage">
+        <div id="app"></div>
+      </div>
+    </div>
+    <script
+      src="https://unpkg.com/react@16/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+
+    <script>
+      "use strict";
+      const e = React.createElement;
+      const Stars = () => {
+        const numberOfStars = 300;
+        const numberOfShootingStars = 6;
+
+        const stars = [];
+        for (var i = 0; i < numberOfStars; i++) {
+          stars.push(
+            e("div", { className: `star star-${i}`, key: `star-${i}` })
+          );
+        }
+        for (var i = 0; i < numberOfShootingStars; i++) {
+          stars.push(
+            e("div", {
+              className: `shooting-star shooting-star-${i}`,
+              key: `shooting-star-${i}`,
+            })
+          );
+        }
+
+        return stars;
+      };
+
+      const domContainer = document.querySelector("#app");
+      ReactDOM.render(e(Stars), domContainer);
+    </script>
+  </body>
+</html>
