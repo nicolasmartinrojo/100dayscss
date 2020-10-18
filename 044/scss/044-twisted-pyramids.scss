@@ -1,0 +1,56 @@
+// delete the following line if no text is used
+// edit the line if you wanna use other fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+$numberOfSquares: 20;
+
+// use only the available space inside the 400x400 frame
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: #fff;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: black;
+}
+
+.cube {
+    border: 1px solid white;
+    position: absolute;
+}
+
+
+@for $i from 1 through $numberOfSquares {
+    $size: 200 - ($i * 10);
+    $offset: (400 - $size) / 2;
+
+    .cube-#{$i} {
+        top: $offset + px;
+        left: $offset + px;
+        width: $size + px;
+        height: $size + px;
+        opacity: $i/$numberOfSquares;
+        background-color: rgba(150, 150, 150, $i/$numberOfSquares);
+        animation: 5s rotateCube ease-in-out $i/10 + s alternate infinite;
+    }
+}
+
+@keyframes rotateCube {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+
+    }
+}

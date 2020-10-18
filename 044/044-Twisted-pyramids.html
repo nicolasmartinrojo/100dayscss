@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link href="dist/044-twisted-pyramids.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="frame">
+      <div class="stage">
+        <div id="app"></div>
+      </div>
+    </div>
+    <script
+      src="https://unpkg.com/react@16/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+
+    <script>
+      "use strict";
+      const e = React.createElement;
+      const Stars = () => {
+        const numberOfSquares = 20;
+        const stars = [];
+        for (var i = 0; i < numberOfSquares; i++) {
+          stars.push(
+            e("div", {
+              className: `cube cube-${i}`,
+              key: `shooting-star-${i}`,
+            })
+          );
+        }
+
+        return stars;
+      };
+
+      const domContainer = document.querySelector("#app");
+      ReactDOM.render(e(Stars), domContainer);
+    </script>
+  </body>
+</html>

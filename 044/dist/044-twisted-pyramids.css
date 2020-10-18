@@ -1,0 +1,233 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+}
+
+.cube {
+  border: 1px solid white;
+  position: absolute;
+}
+
+.cube-1 {
+  top: 105px;
+  left: 105px;
+  width: 190px;
+  height: 190px;
+  opacity: 0.05;
+  background-color: rgba(150, 150, 150, 0.05);
+  animation: 5s rotateCube ease-in-out 0.1s alternate infinite;
+}
+
+.cube-2 {
+  top: 110px;
+  left: 110px;
+  width: 180px;
+  height: 180px;
+  opacity: 0.1;
+  background-color: rgba(150, 150, 150, 0.1);
+  animation: 5s rotateCube ease-in-out 0.2s alternate infinite;
+}
+
+.cube-3 {
+  top: 115px;
+  left: 115px;
+  width: 170px;
+  height: 170px;
+  opacity: 0.15;
+  background-color: rgba(150, 150, 150, 0.15);
+  animation: 5s rotateCube ease-in-out 0.3s alternate infinite;
+}
+
+.cube-4 {
+  top: 120px;
+  left: 120px;
+  width: 160px;
+  height: 160px;
+  opacity: 0.2;
+  background-color: rgba(150, 150, 150, 0.2);
+  animation: 5s rotateCube ease-in-out 0.4s alternate infinite;
+}
+
+.cube-5 {
+  top: 125px;
+  left: 125px;
+  width: 150px;
+  height: 150px;
+  opacity: 0.25;
+  background-color: rgba(150, 150, 150, 0.25);
+  animation: 5s rotateCube ease-in-out 0.5s alternate infinite;
+}
+
+.cube-6 {
+  top: 130px;
+  left: 130px;
+  width: 140px;
+  height: 140px;
+  opacity: 0.3;
+  background-color: rgba(150, 150, 150, 0.3);
+  animation: 5s rotateCube ease-in-out 0.6s alternate infinite;
+}
+
+.cube-7 {
+  top: 135px;
+  left: 135px;
+  width: 130px;
+  height: 130px;
+  opacity: 0.35;
+  background-color: rgba(150, 150, 150, 0.35);
+  animation: 5s rotateCube ease-in-out 0.7s alternate infinite;
+}
+
+.cube-8 {
+  top: 140px;
+  left: 140px;
+  width: 120px;
+  height: 120px;
+  opacity: 0.4;
+  background-color: rgba(150, 150, 150, 0.4);
+  animation: 5s rotateCube ease-in-out 0.8s alternate infinite;
+}
+
+.cube-9 {
+  top: 145px;
+  left: 145px;
+  width: 110px;
+  height: 110px;
+  opacity: 0.45;
+  background-color: rgba(150, 150, 150, 0.45);
+  animation: 5s rotateCube ease-in-out 0.9s alternate infinite;
+}
+
+.cube-10 {
+  top: 150px;
+  left: 150px;
+  width: 100px;
+  height: 100px;
+  opacity: 0.5;
+  background-color: rgba(150, 150, 150, 0.5);
+  animation: 5s rotateCube ease-in-out 1s alternate infinite;
+}
+
+.cube-11 {
+  top: 155px;
+  left: 155px;
+  width: 90px;
+  height: 90px;
+  opacity: 0.55;
+  background-color: rgba(150, 150, 150, 0.55);
+  animation: 5s rotateCube ease-in-out 1.1s alternate infinite;
+}
+
+.cube-12 {
+  top: 160px;
+  left: 160px;
+  width: 80px;
+  height: 80px;
+  opacity: 0.6;
+  background-color: rgba(150, 150, 150, 0.6);
+  animation: 5s rotateCube ease-in-out 1.2s alternate infinite;
+}
+
+.cube-13 {
+  top: 165px;
+  left: 165px;
+  width: 70px;
+  height: 70px;
+  opacity: 0.65;
+  background-color: rgba(150, 150, 150, 0.65);
+  animation: 5s rotateCube ease-in-out 1.3s alternate infinite;
+}
+
+.cube-14 {
+  top: 170px;
+  left: 170px;
+  width: 60px;
+  height: 60px;
+  opacity: 0.7;
+  background-color: rgba(150, 150, 150, 0.7);
+  animation: 5s rotateCube ease-in-out 1.4s alternate infinite;
+}
+
+.cube-15 {
+  top: 175px;
+  left: 175px;
+  width: 50px;
+  height: 50px;
+  opacity: 0.75;
+  background-color: rgba(150, 150, 150, 0.75);
+  animation: 5s rotateCube ease-in-out 1.5s alternate infinite;
+}
+
+.cube-16 {
+  top: 180px;
+  left: 180px;
+  width: 40px;
+  height: 40px;
+  opacity: 0.8;
+  background-color: rgba(150, 150, 150, 0.8);
+  animation: 5s rotateCube ease-in-out 1.6s alternate infinite;
+}
+
+.cube-17 {
+  top: 185px;
+  left: 185px;
+  width: 30px;
+  height: 30px;
+  opacity: 0.85;
+  background-color: rgba(150, 150, 150, 0.85);
+  animation: 5s rotateCube ease-in-out 1.7s alternate infinite;
+}
+
+.cube-18 {
+  top: 190px;
+  left: 190px;
+  width: 20px;
+  height: 20px;
+  opacity: 0.9;
+  background-color: rgba(150, 150, 150, 0.9);
+  animation: 5s rotateCube ease-in-out 1.8s alternate infinite;
+}
+
+.cube-19 {
+  top: 195px;
+  left: 195px;
+  width: 10px;
+  height: 10px;
+  opacity: 0.95;
+  background-color: rgba(150, 150, 150, 0.95);
+  animation: 5s rotateCube ease-in-out 1.9s alternate infinite;
+}
+
+.cube-20 {
+  top: 200px;
+  left: 200px;
+  width: 0px;
+  height: 0px;
+  opacity: 1;
+  background-color: #969696;
+  animation: 5s rotateCube ease-in-out 2s alternate infinite;
+}
+
+@keyframes rotateCube {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
